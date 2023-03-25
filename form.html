@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mockplus CLone">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Bro Code">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container_1">
+        <div class="navbar">
+            <div class="logo-icon" onclick="goToHome()">
+                <i class="fa-solid fa-code"></i>
+                <h2>Mockplus</h2>
+            </div>
+             
+            <div class="list">
+                <ul id="slidemenu">
+                    <li><a href="#">Products</a></li>
+                    
+                    <li><a href="#">Downloads</a></li>
+                    
+                    <li><a href="#">Enterprise</a></li>
+
+                    <li><a href="#">Pricing</a></li>
+                    
+                    <li><a href="#">Learn</a></li>
+                    
+                    <li><a href="#">Templates</a></li>   
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>  
+                    <div class="btn_1">
+                        <button id="press" onclick="goToLoginPage()">Log in</button>
+                        <button id="press" onclick="goToRegisterPage()">Start for free</button>
+                    </div>      
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="btn">
+                <button id="press" onclick="goToLoginPage()">Log in</button>
+                <button id="press" onclick="goToRegisterPage()">Start for free</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form id="theForm form" action="collected data.html" method="post" onsubmit="return validateTextbox();">
+            <div class="form">
+                <h1>Log In</h1>
+                <p>Username</p>
+                
+                <input type="text" id="write" placeholder="Enter your username">
+                <p>Password</p>
+                
+                <input type="text" id="code" placeholder="Enter your password">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="checkbox" id="tick">
+                <p id="remember">Remember me</p>
+            </div>
+            <div class="go">
+                <button id="now">Sign in</button>
+            </div>
+            <p class="ask">You don't have an account? <a id ="register-page" onclick="goToOpenRegisterPage()" href="#">register</a></p>
+        </form>
+    </div>
+    
+
+    <script src="file.js"></script>
+</body>
+</html>
